@@ -13,10 +13,11 @@
         <script src="lib/angular2.dev.js"></script>
         <script>
             System.config({
-                defaultJSExtensions: true,
-                baseUrl: '/dist',                
-                map: {
-                
+                packages: {        
+                dist: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                    }
                 }
             });
             System.import('dist/app.component')
