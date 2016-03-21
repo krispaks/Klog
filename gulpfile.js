@@ -22,6 +22,15 @@ var libs = [
     paths.npm + 'angular2/bundles/angular2.dev.js'
 ];
 
+var assets = [
+    paths.bower + 'bootstrap/dist/css/bootstrap.min.css',
+    paths.bower + 'bootstrap/dist/css/bootstrap-theme.min.css',
+    paths.bower + 'bootstrap/dist/css/bootstrap-theme.min.css.map',
+    paths.bower + 'bootstrap/dist/css/bootstrap.min.css.map',
+    paths.bower + 'bootstrap/dist/js/bootstrap.min.js',
+    paths.bower + 'jquery/dist/jquery.min.js'
+];
+
 gulp.task('libs', function () {
 	return gulp.src(libs)
 	.pipe(gulp.dest(paths.lib));
