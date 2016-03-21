@@ -14,14 +14,14 @@
         <script>
             System.config({
                 packages: {        
-                dist: {
-                    format: 'register',
-                    defaultExtension: 'js'
+                    dist: {
+                        format: 'register',
+                        defaultExtension: 'js'
                     }
                 }
             });
             System.import('dist/app.component')
-                    .then(null, console.error.bind(console));
+                .then(null, console.error.bind(console));
         </script>
     </head>
     <body>

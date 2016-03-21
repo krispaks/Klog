@@ -27,7 +27,7 @@ System.register(['angular2/core', 'angular2/platform/browser'], function(exports
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'klog-main',
-                        template: '<div>Khris</div>'
+                        templateUrl: '../templates/app.template.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

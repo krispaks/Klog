@@ -3,7 +3,7 @@ import { bootstrap } from 'angular2/platform/browser';
 
 @Component({
     selector: 'klog-main',
-    template: '<div>Khris</div>'
+    templateUrl: '../templates/app.template.html'
 })
 
 export class AppComponent{}
