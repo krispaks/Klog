@@ -1,5 +1,5 @@
-import { Component } from 'angular2/core';
-import { bootstrap } from 'angular2/platform/browser';
+import { Component } from '@angular2/core';
+import { bootstrap } from '@angular2/platform-browser-dynamic';
 
 @Component({
     selector: 'klog-main',
@@ -7,5 +7,3 @@ import { bootstrap } from 'angular2/platform/browser';
 })
 
 export class AppComponent{}
-
-bootstrap(AppComponent, [])

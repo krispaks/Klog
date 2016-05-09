@@ -7,23 +7,12 @@
         <script src="assets/jquery.min.js"></script>
         <script src="assets/bootstrap.min.js"></script>
         <script src="lib/es6-shim.min.js"></script>
-        <script src="lib/system-polyfills.js"></script>
-        <script src="lib/shims_for_IE.js"></script>   
-
-        <script src="lib/angular2-polyfills.js"></script>
+        <script src="lib/zone.js"></script>
+        <script src="lib/reflect-metadata/Reflect.js"></script>
         <script src="lib/system.src.js"></script>
-        <script src="lib/Rx.js"></script>
-        <script src="lib/angular2.dev.js"></script>
+        <script src="system.config.js"></script>
         <script>
-            System.config({
-                packages: {        
-                    dist: {
-                        format: 'register',
-                        defaultExtension: 'js'
-                    }
-                }
-            });
-            System.import('dist/app.component')
+            System.import('dist/app')
                 .then(null, console.error.bind(console));
         </script>
     </head>
