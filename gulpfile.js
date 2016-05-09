@@ -13,13 +13,10 @@ var paths = {
 var tsAppProject = ts.createProject(paths.tsAppRoot + 'tsconfig.json');
 
 var libs = [
-    paths.npm + 'es6-shim/es6-shim.min.js',
-    paths.npm + 'systemjs/dist/system-polyfills.js',
-    paths.npm + 'angular2/es6/dev/src/testing/shims_for_IE.js',
-    paths.npm + 'angular2/bundles/angular2-polyfills.js',
+    paths.npm + 'es6-shim/es6-shim.min.js',    
     paths.npm + 'systemjs/dist/system.src.js',
-    paths.npm + 'rxjs/bundles/Rx.js',
-    paths.npm + 'angular2/bundles/angular2.dev.js'
+    paths.npm + 'zone.js/dist/zone.min.js',
+    paths.npm + 'reflect-metadata/Reflect.js'
 ];
 
 var assets = [
